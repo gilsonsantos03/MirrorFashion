@@ -57,3 +57,16 @@ footer img {
     float: right;
     margin: 0 0 10px 10px;
 }
+
+p::first-letter{
+    font-weight: bold;
+}
+
+h1 + p{
+    text-indent: 0;
+}
+
+/*ele seleciona apenas os primeiros parágrafos depois do título e aplica apenas na primeira linha do parágrafo*/
+:not(p) + p::first-line {
+    font-variant: small-caps;  
+}
