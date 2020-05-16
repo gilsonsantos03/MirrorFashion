@@ -89,6 +89,8 @@ header {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px #999;
 }
  
 .novidades {
@@ -105,6 +107,7 @@ header {
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
+    transition: 0.5s ease-out; /*pra fazer a transição na volta*/
 }
 
 .painel h2 {
@@ -112,7 +115,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
-    
+    text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
 }
 
 .painel a {
@@ -124,10 +127,12 @@ header {
  
 .novidades {
     background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc, #bebef4);
 }
  
 .mais-vendidos {
     background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #f4bebe);
 }
 
 footer {
@@ -217,3 +222,19 @@ footer .container {
     padding-right: 5px;
     opacity: 0.4;
   }
+
+.busca {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.painel li:hover{
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.5s ease-in;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+}
