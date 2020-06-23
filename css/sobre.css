@@ -70,3 +70,13 @@ h1 + p{
 :not(p) + p::first-line {
     font-variant: small-caps;  
 }
+
+#video-box{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#map-box{
+    margin: 0 auto;
+    width: 50%;
+}
